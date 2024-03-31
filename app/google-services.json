@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "837269263161",
+    "firebase_url": "https://fyp2-adc5d-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "fyp2-adc5d",
+    "storage_bucket": "fyp2-adc5d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:837269263161:android:42bfb387ddc695f35c8ee8",
+        "android_client_info": {
+          "package_name": "com.example.fyp2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlxcQ_6tbXiuOAOKg0PkZnIxRjSyDtWRE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

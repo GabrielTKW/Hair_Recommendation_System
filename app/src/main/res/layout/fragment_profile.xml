@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/edtEmailProfile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="97dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/baseline_face_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/edtNameProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+    <TextView
+        android:id="@+id/edtEmailRegProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email : "
+        app:layout_constraintStart_toStartOf="@+id/edtRegisteredTime"
+        app:layout_constraintTop_toBottomOf="@+id/edtRegisteredTime" />
+
+    <TextView
+        android:id="@+id/edtRegisteredTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registered:"
+        app:layout_constraintStart_toStartOf="@+id/edtNameProfile"
+        app:layout_constraintTop_toBottomOf="@+id/edtNameProfile" />
+
+    <Button
+        android:id="@+id/btnEdtProfile"
+        android:layout_width="359dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="35dp"
+        android:background="@null"
+        android:text="Edit Profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    <Button
+        android:id="@+id/btnFavourite"
+        android:layout_width="359dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="5dp"
+        android:background="@null"
+        android:text="View Favourite Hairstyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEdtProfile" />
+
+    <Button
+        android:id="@+id/btnMyPost"
+        android:layout_width="359dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="5dp"
+        android:background="@null"
+        android:text="My Hairstyle Post"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFavourite" />
+
+    <Button
+        android:id="@+id/btnLogOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Log out"
+        app:layout_constraintEnd_toEndOf="@+id/btnMyPost"
+        app:layout_constraintStart_toStartOf="@+id/btnMyPost"
+        app:layout_constraintTop_toBottomOf="@+id/btnMyPost" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

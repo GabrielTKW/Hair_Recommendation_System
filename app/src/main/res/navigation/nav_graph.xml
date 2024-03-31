@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/blankFragment">
+
+    <fragment
+        android:id="@+id/specificHairFragment"
+        android:name="com.example.fyp2.SpecificHairFragment"
+        android:label="fragment_specific_hair"
+        tools:layout="@layout/fragment_specific_hair" />
+
+    <fragment
+        android:id="@+id/UploadFragment"
+        android:name="com.example.fyp2.UploadFragment"
+        android:label="UploadFragment"
+        tools:layout="@layout/fragment_upload" />
+
+    <fragment
+        android:id="@+id/HairStyleFragment"
+        android:name="com.example.fyp2.HairStyleFragment"
+        android:label="fragment_hair_style"
+        tools:layout="@layout/fragment_hair_style" >
+        <action
+            android:id="@+id/action_HairStyleFragment_to_specificHairFragment"
+            app:destination="@id/specificHairFragment" />
+        <action
+            android:id="@+id/action_HairStyleFragment_to_UploadFragment"
+            app:destination="@id/UploadFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_graph" />
+
+    <fragment
+        android:id="@+id/nav_host_fragment2"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_graph"
+        />
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.fyp2.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/detectHairstyleFragment"
+        android:name="com.example.fyp2.DetectHairstyleFragment"
+        android:label="fragment_detect_hairstyle"
+        tools:layout="@layout/fragment_detect_hairstyle" />
+    <fragment
+        android:id="@+id/registerAccount"
+        android:name="com.example.fyp2.RegisterAccount"
+        android:label="fragment_register_account"
+        tools:layout="@layout/fragment_register_account" />
+    <fragment
+        android:id="@+id/blankFragment"
+        android:name="com.example.fyp2.BlankFragment"
+        android:label="fragment_blank"
+        tools:layout="@layout/fragment_blank" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.fyp2.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/forgetPassFragment"
+        android:name="com.example.fyp2.ForgetPassFragment"
+        android:label="fragment_forget_pass"
+        tools:layout="@layout/fragment_forget_pass" />
+    <fragment
+        android:id="@+id/editFragment"
+        android:name="com.example.fyp2.editFragment"
+        android:label="fragment_edit"
+        tools:layout="@layout/fragment_edit" />
+    <fragment
+        android:id="@+id/userFavouriteFragment"
+        android:name="com.example.fyp2.userFavouriteFragment"
+        android:label="fragment_user_favourite"
+        tools:layout="@layout/fragment_user_favourite" />
+    <fragment
+        android:id="@+id/userHairstylePost"
+        android:name="com.example.fyp2.userHairstylePost"
+        android:label="fragment_user_hairstyle_post"
+        tools:layout="@layout/fragment_user_hairstyle_post" />
+    <fragment
+        android:id="@+id/editHairstyle"
+        android:name="com.example.fyp2.editHairstyle"
+        android:label="fragment_edit_hairstyle"
+        tools:layout="@layout/fragment_edit_hairstyle" />
+    <activity
+        android:id="@+id/adminActivity"
+        android:name="com.example.fyp2.AdminActivity"
+        android:label="AdminActivity" />
+    <fragment
+        android:id="@+id/adminEditUser"
+        android:name="com.example.fyp2.adminEditUser"
+        android:label="fragment_admin_edit_user"
+        tools:layout="@layout/fragment_admin_edit_user" />
+    <fragment
+        android:id="@+id/recHairstyle"
+        android:name="com.example.fyp2.recHairstyle"
+        android:label="fragment_rec_hairstyle"
+        tools:layout="@layout/fragment_rec_hairstyle" />
+    <fragment
+        android:id="@+id/adminComment"
+        android:name="com.example.fyp2.adminComment"
+        android:label="fragment_admin_comment"
+        tools:layout="@layout/fragment_admin_comment" />
+    <fragment
+        android:id="@+id/adminProfileFragment"
+        android:name="com.example.fyp2.adminProfileFragment"
+        android:label="fragment_admin_profile"
+        tools:layout="@layout/fragment_admin_profile" />
+
+
+</navigation>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout8"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".editHairstyle" >
+
+    <ImageView
+        android:id="@+id/editImageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/baseline_image_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="@+id/editImageView"
+        app:layout_constraintStart_toStartOf="@+id/editImageView"
+        app:layout_constraintTop_toBottomOf="@+id/editImageView" />
+
+    <Spinner
+        android:id="@+id/editGender"
+        android:layout_width="173dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Gender"
+
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/editDesc"
+        app:layout_constraintStart_toStartOf="@+id/editDesc"
+        app:layout_constraintTop_toBottomOf="@+id/editDesc" />
+
+    <Spinner
+        android:id="@+id/editCategories"
+        android:layout_width="173dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+
+        android:hint="Gender"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/editGender"
+        app:layout_constraintStart_toStartOf="@+id/editGender"
+        app:layout_constraintTop_toBottomOf="@+id/editGender" />
+
+    <EditText
+        android:id="@+id/editDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Description"
+        app:layout_constraintEnd_toEndOf="@+id/editName"
+        app:layout_constraintStart_toStartOf="@+id/editName"
+        app:layout_constraintTop_toBottomOf="@+id/editName" />
+
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Update"
+        app:layout_constraintStart_toStartOf="@+id/editImageView"
+        app:layout_constraintTop_toBottomOf="@+id/editCategories" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Delete"
+        app:layout_constraintEnd_toEndOf="@+id/editImageView"
+        app:layout_constraintStart_toEndOf="@+id/updateButton"
+        app:layout_constraintTop_toTopOf="@+id/updateButton" />
+
+    <Button
+        android:id="@+id/backtoPrevious"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:backgroundTint="@android:color/transparent"
+        android:padding="0dp"
+        android:text="Back to previous page"
+        android:textColor="?android:attr/textColorPrimary"
+        app:layout_constraintEnd_toEndOf="@+id/deleteButton"
+        app:layout_constraintStart_toStartOf="@+id/updateButton"
+        app:layout_constraintTop_toBottomOf="@+id/updateButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

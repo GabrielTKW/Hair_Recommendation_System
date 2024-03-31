@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".recHairstyle">
+
+    <ScrollView
+        android:layout_width="405dp"
+        android:layout_height="639dp"
+        tools:context=".recHairstyle">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rVRecommend"
+        android:layout_width="match_parent"
+        android:layout_height="812dp"
+        tools:listitem="@layout/item_layout" />
+
+    </ScrollView>
+</FrameLayout>

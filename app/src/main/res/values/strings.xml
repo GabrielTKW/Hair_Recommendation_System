@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Hairstyle Recommendation System</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+    <string-array name="numbers">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+</resources>

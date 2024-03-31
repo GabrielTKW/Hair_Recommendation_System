@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".adminEditUser" >
+
+    <Button
+        android:id="@+id/adminBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Promote to Admin"
+        app:layout_constraintEnd_toEndOf="@+id/dltButton"
+        app:layout_constraintStart_toStartOf="@+id/dltButton"
+        app:layout_constraintTop_toBottomOf="@+id/dltButton" />
+
+    <EditText
+        android:id="@+id/editNameUser"
+        android:layout_width="333dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/userIDedit" />
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="333dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Email"
+        app:layout_constraintEnd_toEndOf="@+id/editNameUser"
+        app:layout_constraintStart_toStartOf="@+id/editNameUser"
+        app:layout_constraintTop_toBottomOf="@+id/editNameUser" />
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="333dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Password"
+        app:layout_constraintEnd_toEndOf="@+id/editEmail"
+        app:layout_constraintStart_toStartOf="@+id/editEmail"
+        app:layout_constraintTop_toBottomOf="@+id/editEmail" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/baseline_face_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/userIDedit"
+        android:layout_width="81dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+    <TextView
+        android:id="@+id/securityCodeUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Security Code:"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/editPassword"
+        app:layout_constraintStart_toStartOf="@+id/editPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editPassword" />
+
+    <Button
+        android:id="@+id/updateButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Update"
+        app:layout_constraintStart_toStartOf="@+id/editNameUser"
+        app:layout_constraintTop_toBottomOf="@+id/securityCodeUser" />
+
+    <Button
+        android:id="@+id/fButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Freeze"
+        app:layout_constraintEnd_toEndOf="@+id/editNameUser"
+        app:layout_constraintTop_toBottomOf="@+id/securityCodeUser" />
+
+    <Button
+        android:id="@+id/dltButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        app:layout_constraintEnd_toStartOf="@+id/fButton"
+        app:layout_constraintStart_toEndOf="@+id/updateButton2"
+        app:layout_constraintTop_toTopOf="@+id/fButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>

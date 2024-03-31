@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SpecificHairFragment">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SpecificHairFragment">
+
+    <ImageView
+        android:id="@+id/imageViewSpecific"
+        android:layout_width="295dp"
+        android:layout_height="268dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/baseline_image_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/specificHairStyleName"
+        android:layout_width="294dp"
+        android:layout_height="66dp"
+        android:text="Hairstyle Name"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewSpecific"
+        app:layout_constraintStart_toStartOf="@+id/imageViewSpecific"
+        app:layout_constraintTop_toBottomOf="@+id/btnLikeSpecific" />
+
+    <TextView
+        android:id="@+id/specficDesc"
+        android:layout_width="293dp"
+        android:layout_height="61dp"
+        android:text="Description"
+        app:layout_constraintEnd_toEndOf="@+id/specificHairStyleName"
+        app:layout_constraintStart_toStartOf="@+id/specificHairStyleName"
+        app:layout_constraintTop_toBottomOf="@+id/specificHairStyleName" />
+
+    <TextView
+        android:id="@+id/specificCat"
+        android:layout_width="293dp"
+        android:layout_height="51dp"
+        android:text="Categories"
+        app:layout_constraintEnd_toEndOf="@+id/specficDesc"
+        app:layout_constraintStart_toStartOf="@+id/specficDesc"
+        app:layout_constraintTop_toBottomOf="@+id/specficDesc" />
+
+    <TextView
+        android:id="@+id/specficGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="gender"
+        app:layout_constraintEnd_toEndOf="@+id/specificCat"
+        app:layout_constraintTop_toBottomOf="@+id/specificCat" />
+
+    <TextView
+        android:id="@+id/specificTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        app:layout_constraintStart_toStartOf="@+id/specificCat"
+        app:layout_constraintTop_toBottomOf="@+id/specificCat" />
+
+    <ImageButton
+        android:id="@+id/btnLikeSpecific"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/baseline_thumb_up_24"
+        app:layout_constraintEnd_toStartOf="@+id/btnSavedSpecific"
+        app:layout_constraintTop_toTopOf="@+id/btnSavedSpecific" />
+
+    <TextView
+        android:id="@+id/likeCountSpecific"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Like"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnLikeSpecific"
+        app:layout_constraintEnd_toStartOf="@+id/btnLikeSpecific"
+        app:layout_constraintTop_toTopOf="@+id/btnLikeSpecific" />
+
+    <ImageButton
+        android:id="@+id/btnSavedSpecific"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/baseline_save_24"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewSpecific"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewSpecific" />
+
+    <Button
+        android:id="@+id/edtButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        app:layout_constraintStart_toStartOf="@+id/imageViewSpecific"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewSpecific" />
+
+    <EditText
+        android:id="@+id/addCommenttext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Add comment"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/specificTime" />
+
+    <ImageButton
+        android:id="@+id/addCommentButton"
+        android:layout_width="36dp"
+        android:layout_height="44dp"
+        android:src="@drawable/baseline_add_24"
+        app:layout_constraintBottom_toBottomOf="@+id/addCommenttext"
+        app:layout_constraintStart_toEndOf="@+id/addCommenttext"
+        app:layout_constraintTop_toTopOf="@+id/addCommenttext" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/commentRecycleView"
+        android:layout_width="338dp"
+        android:layout_height="309dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addCommenttext"
+        tools:listitem="@layout/item_layout_comment" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="80sp"
+        app:layout_constraintTop_toBottomOf="@+id/commentRecycleView"
+        tools:layout_editor_absoluteX="168dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

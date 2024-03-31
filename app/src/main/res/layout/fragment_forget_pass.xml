@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".ForgetPassFragment">
+
+
+    <Button
+        android:id="@+id/backToLogin2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:backgroundTint="@android:color/transparent"
+        android:padding="0dp"
+        android:text="Back to Login"
+        android:textColor="?android:attr/textColorPrimary"
+        app:layout_constraintEnd_toEndOf="@+id/btnChangePass"
+        app:layout_constraintStart_toStartOf="@+id/btnChangePass"
+        app:layout_constraintTop_toBottomOf="@+id/btnChangePass" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Forget Password"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="113dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/baseline_account_circle_24"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <EditText
+        android:id="@+id/edtSecurityCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Security Code"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/edtEmail"
+        app:layout_constraintStart_toStartOf="@+id/edtEmail"
+        app:layout_constraintTop_toBottomOf="@+id/edtEmail" />
+
+    <ToggleButton
+        android:id="@+id/btnTogglePassword"
+        android:layout_width="50dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="4dp"
+        android:background="@null"
+        android:text=""
+        android:textOff=""
+        android:textOn=""
+        app:layout_constraintEnd_toEndOf="@+id/edtNewPass"
+        app:layout_constraintTop_toTopOf="@+id/edtNewPass" />
+
+
+
+    <EditText
+        android:id="@+id/edtNewPass"
+        android:layout_width="287dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="New Password"
+        android:inputType="textPassword|textVisiblePassword"
+        app:layout_constraintEnd_toEndOf="@+id/edtSecurityCode"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="@+id/edtSecurityCode"
+        app:layout_constraintTop_toBottomOf="@+id/edtSecurityCode" />
+
+    <Button
+        android:id="@+id/btnChangePass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Change Password"
+        app:layout_constraintEnd_toEndOf="@+id/edtNewPass"
+        app:layout_constraintStart_toStartOf="@+id/edtNewPass"
+        app:layout_constraintTop_toBottomOf="@+id/edtNewPass" />
+</androidx.constraintlayout.widget.ConstraintLayout>
